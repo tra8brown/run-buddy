@@ -1,16 +1,15 @@
 * {
+  box-sizing: 0;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  /* more on this crazy alphanumerical value in a minute! */
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* apply styles to <header> */
+/* applying styles to <header> */
 header {
   padding: 20px 35px;
   background-color: #39a6b2;
@@ -48,6 +47,7 @@ header nav ul li a {
   font-size: 1.55vw;
 }
 
+/*footer*/
 footer {
   display: flex;
   justify-content: space-between;
@@ -82,12 +82,10 @@ section {
   display: flex;
   background-size: cover;
   background-position: center;
-  position: relative;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
 }
-/* Hero Style End */
 
 .hero-form {
   border: 3px solid #024e76;
@@ -128,7 +126,6 @@ section {
   font-size: 16px;
 }
 
-/*adding styles to CTA 2.2.7*/
 .hero-cta {
   width: 35%;
   text-align: right;
@@ -143,7 +140,9 @@ section {
   font-size: 55px;
   color: #fce138;
 }
+/*end hero*/
 
+/*what we do*/
 .intro p {
   line-height: 1.7;
   color: #39a6b2;
@@ -152,7 +151,9 @@ section {
   margin: 0 auto;
   text-align: center;
 }
+/*what we do end*/
 
+/*what you do*/
 .steps {
   background: #fce138;
 }
@@ -204,7 +205,9 @@ section {
   color: #39a6b2;
   font-size: 18px;
 }
+/*what you do ending*/
 
+/*section section*/ 
 .section-title {
   font-size: 48px;
   color: #024e76;
@@ -222,9 +225,11 @@ width: 50%;
 .secondary-border {
   border-color: #39a6b2;
 }
+/*end of section section*/ 
 
+/*meet the trainers*/
 .trainer {
-  margin: 20;
+  margin: 20px;
   background: #024e76;
   color: #fce138;
   flex: 1;
@@ -244,6 +249,7 @@ width: 50%;
 
 .trainer-bio {
   padding: 25px;
+  line-height: 1.3;
 }
 
 .trainer-bio h3 {
@@ -259,18 +265,7 @@ width: 50%;
 .trainer-bio p {
   font-size: 17px;
 }
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.flex-row {
-  display: flex;
-}
+/*trainer style ending*/ 
 
 /* REACH OUT STYLES START */
 .contact {
@@ -340,6 +335,20 @@ width: 50%;
 
 /* REACH OUT STYLES END */
 
+
+/*....*/ 
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex-row {
+  display: flex;
+}
+
 /*MEDIA QUERY FOR SMALLER DESWKTOP SCREENS AND SMALLER*/
 @media screen and (max-width:980px) {
   header {
@@ -389,7 +398,7 @@ width: 50%;
 }
 
 /*MEDIA QUERY FOR TABLES AND SMALLER*/
-@media  and (max-width:768px) {
+@media screen and (max-width:768px) {
   section {
     padding: 30px 15px;
   }
